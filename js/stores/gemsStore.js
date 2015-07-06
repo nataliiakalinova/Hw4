@@ -105,7 +105,6 @@ var gemsStore = assign({}, EventEmitter.prototype, {
 });
 
 Dispatcher.register(function (action) {
-    debugger;
     switch (action.actionType) {
         case 'ADD_ITEM':
             gemstones[action.item.group].push(action.item);
